@@ -1,0 +1,41 @@
+
+<div class="image-bg">
+<div class="d-f">
+<h1 class="">Latest Job</h1>
+<h5>- NEWLY CREATED JOBS -</h5>
+</div>
+
+ </div>
+
+
+<%# <% unless notice.nil? %>
+<%# <div class="alert alert-primary   fade show" role="alert"> %>
+ <%# <p style="color: green"><%= notice</p> %> 
+ 
+<%# </div> %>
+<%# <% end %> 
+<section class="sec-1">
+<div class="container">
+<div class="row">
+<div class="job">
+<div class="col-md-12 ">
+
+  <% @jobs.each do |job| %>
+    <%= render job %>
+
+     </div>
+     <div class="col-md-12 text-center ">
+     
+    <p>
+      <%= link_to "Show this job", job ,class:"btn-jobs" %>
+    </p>
+   
+  <% end %>
+     
+ </div></div></div>
+ <div class="text-center mt-5 mb-5">
+ 
+<%= link_to "New job", new_job_path ,class:"btn-logs" %>
+ 
+</div>
+</div></section>

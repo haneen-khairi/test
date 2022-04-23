@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+<section class="sec-1">
+<div class="container">
+<div class="row">
+ 
+<div class="col-md-12 text-center ">
+<%= render @application %>
+
+<div>
+  <%= link_to "Edit this application", edit_application_path(@application) %> |
+  <%= link_to "Back to applications", applications_path %>
+
+  <%= button_to "Destroy this application", @application, method: :delete , class:"btn-job" %>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>

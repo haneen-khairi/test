@@ -1,0 +1,317 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+* {
+    /* background-color: #ffffff; */
+    color: black;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #013947;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #00ccff;
+}
+
+.sec-1 {
+    margin-top: 10px;
+    position: relative;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: 50% 0 !important;
+}
+
+.sec-1 h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: #525252;
+    font-weight: 900;
+}
+
+.sec-1 h5 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #9e9e9e;
+    font-size: 14px;
+}
+
+.jobs {
+    background-color: #f1f1f1;
+    margin: 20px 0px;
+    min-width: 100%;
+    padding: 16px;
+    text-align: start;
+    border-bottom: 1px solid rgb(197, 197, 197);
+    box-shadow: 1px 1px 10px #c4c4c4;
+}
+
+.job-title p,
+strong {
+    background-color: #f1f1f1;
+    color: #00718e;
+    font-size: 17px;
+    padding: 2px;
+}
+
+.d-flex-c {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.d-flex-r {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.input-job {
+    padding: 10px;
+    min-width: 75%;
+    border-radius: 6px;
+    background: #f2f4f6d6;
+    border: none;
+    border-bottom: 3px solid #9f9f9f;
+    color: #003249;
+}
+.input-log{
+    padding: 5px 20px;
+    max-width: 300px;
+    
+    border-radius: 6px;
+    background: #f2f4f6d6;
+    border: none;
+    border-bottom: 3px solid #9f9f9f;
+    color: #003249;
+}
+.input-job:focus-visible {
+    outline: none;
+}
+.input-log:focus-visible {
+    outline: none;
+}
+.label-log{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.label-job {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px 0px;
+}
+
+.btn-job {
+    padding: 10px 15px;
+    margin: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 10px grey;
+}
+.btn-signout{
+    padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 10px grey;
+}
+.btn-logs{
+    padding: 15px 65px;
+    margin: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.btn-log {
+    padding: 10px 15px;
+    margin: 20px;
+    border: none;
+    background-color: black;
+    width: 150px;
+    color: white;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.btn-jobs {
+    padding: 10px 15px;
+    margin: 20px;
+    border: none;
+    background-color: black;
+    color: white!important;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.btn-signout:hover {
+    transition: all 0.5s ease-in;
+    background-color: #0ab6df;
+    transform: scale(1.02);
+    color:white!important;
+}
+
+.btn-logs:hover {
+    transition: all 0.5s ease-in;
+    background-color: #0ab6df;
+    transform: scale(1.02);
+    color:white!important;
+}
+.btn-jobs:hover {
+    transition: all 0.5s ease-in;
+    background-color: #003249;
+    transform: scale(1.02);
+    color:white!important;
+}
+.btn-job:hover {
+    transition: all 0.5s ease-in;
+    background-color: #0ab6df;
+    transform: scale(1.02);
+}
+.btn-log:hover {
+    transition: all 0.5s ease-in;
+    background-color: #0ab6df;
+    transform: scale(1.02);
+}
+.image-bg {
+    background-image: url(cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 300px;
+    min-width: 100%;
+    width: 100%;
+    filter: opacity(0.9);
+}
+
+.nav-logo {
+    width: 250px;
+    padding: 0px 100px;
+    color: #003249!important;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.nav-menus {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+
+.nav-menus li a {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    margin: 0px 12px;
+}
+
+.nav-menus li a:hover {
+    transition: all 0.2s ease-in;
+    border-bottom: 1px solid grey;
+    color: #00718e!important;
+}
+
+.d-f {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    height: 300px;
+}
+
+.d-f h1,
+h5 {
+    color: white;
+    font-weight: 900;
+    background: #00000063;
+    padding: 16px;
+}
+
+
+.form-box {
+    width: 100%;
+    background-color: #e2e7ee;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 44px 0px;
+}
+textarea{
+    min-height:150px;
+}
+.login-card{
+    background-color: #ebebf1;
+    border-radius: 10px;
+    box-shadow: 4px 3px 11px #6d6d6d;
+    padding: 40px 0px;
+    margin: 10px;
+}
+.login-card .log-page h2{
+    font-weight: 700;
+    letter-spacing: 6px;
+    font-variant-caps: all-small-caps;
+    color: #00718e;
+}
+.form-check-input:checked {
+    background-color: #00718e!important;
+    border-color: #00718e!important;
+    box-shadow: 1px 1px 5px grey;
+}
+.form-check-input {
+    margin-right: 10px!important;
+}
+.label-check{
+    font-size: 17px;
+    font-weight: 600;
+    margin: 1px 0px;
+}
+footer{
+    margin-top:100px;
+    background-color:#003249;
+    color:white;
+    padding:50px;
+}
+.footer p{
+    color:white;
+}
+.alert {
+    padding: 0rem 1rem!important;
+}
+@media only screen and (max-width: 600px) {
+    .nav-logo {
+        padding: 0px 10px;
+        width: 100px;
+    }
+    .nav-link {
+        display: block;
+        padding: -0.5rem 1rem;
+      
+    }
+    .nav-menus li a {
+        display: inline;
+    }
+}

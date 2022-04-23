@@ -1,0 +1,19 @@
+<section class="sec-1">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+
+<h1>Welcome Admin</h1>
+<h3>- Editing job -</h3>
+<%= render "form", job: @job %>
+
+<br>
+
+<div>
+  <%= link_to "Show this job", @job %> |
+  <%= link_to "Back to jobs", jobs_path %>
+</div>
+</div>
+</div>
+</div>
+</section>

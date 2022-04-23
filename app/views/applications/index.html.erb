@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+<section class="sec-1">
+<div class="container">
+<div class="row">
+ 
+<div class="col-md-12 text-center ">
+<div class="login-card">
+<h1>Applications</h1>
+
+<div id="applications">
+  <% @applications.each do |application| %>
+    <%= render application %>
+    <p>
+      <%= link_to "Show this application", application %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New application", new_application_path %>
+
+</div>
+</div>
+</div>
+</div>
+</section>

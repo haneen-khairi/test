@@ -1,0 +1,42 @@
+<section class="sec-1">
+<div class="container">
+<div class="row">
+<div class="job">
+<div class="col-md-12 text-center ">
+<%= form_with(model: application) do |form| %>
+  <% if application.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(application.errors.count, "error") %> prohibited this application from being saved:</h2>
+
+      <ul>
+        <% application.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" , class:"label-job"%>
+    <%= form.text_field :title ,class:"input-job" %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" , class:"label-job"%>
+    <%= form.text_area :description ,class:"input-job" %>
+  </div>
+
+  <%# <div> %>
+    <%# <%= form.label :status, style: "display: block"  %>
+    <%# <%= form.number_field :status %> 
+  <%# </div> %>
+
+  <div>
+    <%= form.submit class:"btn-job" %>
+  </div>
+<% end %>
+</div>
+</div>
+</div>
+</div>
+</section>
